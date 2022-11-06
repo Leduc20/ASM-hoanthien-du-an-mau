@@ -3,7 +3,7 @@
         <div class="md:block mx-auto md:w-[1200px]">
             <div class="md:flex justify-between mt-3 md:border-b-2 font-bold">
                 <p class="text-[20px]">
-                    SẢN PHẨM BÁN CHẠY
+                    <!-- SẢN PHẨM BÁN CHẠY -->
                 </p>
                 <!-- <p class="hidden md:block">
                     <a class="text-[#0088CC]" href="">XEM TẤT CẢ</a>
@@ -398,7 +398,6 @@
                         </li>';
                         }
                         ?>
-
 
                     </ul>
                 </section>

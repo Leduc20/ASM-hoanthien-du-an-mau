@@ -68,14 +68,12 @@ function viewcart($del)
     </tr>   
         ';
 }
-function show_bill_ct($listpro)
+function show_bill_ct($billct)
 {
-    var_dump($listpro);
-    print_r($listpro);
     global $img_path;
     $sumall = 0;
     $sum = 0;
-    foreach ($listpro as $show) {
+    foreach ($billct as $show) {
         $img = $img_path . $show['image'];
         $sumall += $sum['thanhtien'];
 
@@ -128,7 +126,7 @@ function loadone_bill($id)
 }
 function loadone_cart($idbill)
 {
-    $sql = "SELECT * FROM cart WHERE id_bill=" . $idbill;
+    $sql = "SELECT * FROM `cart` WHERE `id_bill`=" . $idbill;
     $cart = pdo_query_one($sql);
     return $cart;
 }

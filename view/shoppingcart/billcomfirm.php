@@ -68,7 +68,45 @@
                 </thead>
                 <tbody>
                     <?php
-                        show_bill_ct($billct);
+                    // show_bill_ct($billct);
+                        // global $img_path;
+                        // $sumall = 0;
+                        // $sum = 0;
+                        // foreach ($bill as $show) {
+                        //     echo $show;
+                        //     var_dump($show);
+                        //     $img = $img_path . $show['image'];
+                        //     $sumall += $sum['thanhtien'];
+                    
+                        //     echo '
+                           
+                        // </tr>
+                        //     <tr>
+                        //     <td class="col-sm-8 col-md-6">
+                        //     <div class="media">
+                        //         <a class="thumbnail pull-left" href="#"> <img class="media-object w-[180px]" src="' . $img . '" "> </a>
+                        //         <div class="media-body">
+                        //             <h4 class="media-heading"><a href="#">' . $show['name'] . '</a></h4>
+                        //             <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+                        //             <!-- <span>Status: </span><span class="text-success"><strong>In Stock</strong></span> -->
+                        //         </div>
+                        //     </div></td>
+                        //     <td class="col-sm-1 col-md-1" style="text-align: center">
+                        //     <t class="col-sm-1 col-md-1 text-center w-[60px]"><strong>' . $show['soluong'] . '</strong></t>
+                        //     </td>
+                        //     <td class="col-sm-1 col-md-1 text-center w-[60px]"><strong>' . $show['price'] . ' VNĐ</strong></td>
+                        //     <td class="col-sm-1 col-md-1 text-center w-[60px]"><strong>' . $show['thanhtien'] . ' VNĐ</strong></td>
+                        //     </tr>
+                        // ';
+                        // }
+                        // echo '
+                        //      <tr>
+                        //     <td>   </td>
+                        //     <td>   </td>
+                        //     <td>   </td>
+                        //     <td><h5>Tổng tất cả</h5></td>
+                        //     <td class="text-right"><h5><strong>' . $sumall . ' VNĐ</strong></h5></td>
+                        // </tr>   ';
                     ?> 
                     <tr>
                         <td>   </td>

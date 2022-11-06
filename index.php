@@ -1,6 +1,6 @@
 <?php
 ob_start();
-error_reporting(0);
+// error_reporting(0);
 session_start();
 include "./model/pdo.php";
 include "./model/products.php";
@@ -107,7 +107,6 @@ if (isset($_GET['act'])) {
                     $thongbao = "Email không tồn tại!";
                 }
             }
-
             include "./view/Forgotpassword/form.php";
             break;
         case 'thoat':
@@ -163,7 +162,6 @@ if (isset($_GET['act'])) {
                 foreach ($_SESSION['mycart'] as $show) {
                     insert_cart($_SESSION['user']['id_user'], $show[0], $show[2], $show[1], $show[3], $show[4], $show[5], $idbill);
                 }
-
                 $_SESSION['mycart'] = [];
             }
             $bill = loadone_bill($idbill);

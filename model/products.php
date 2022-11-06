@@ -44,7 +44,7 @@ function loadall_products_top10()
     return $listproducts;
 }
 function loadall_products_content(){
-    $sql="SELECT * FROM `products` WHERE 1 order by id_hh desc limit 0,9";
+    $sql="SELECT * FROM `products` WHERE 1 order by id_hh desc limit 0,12";
     $listproducts = pdo_query($sql);
     return $listproducts;
 }

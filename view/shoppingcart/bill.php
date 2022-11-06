@@ -18,7 +18,7 @@
                 $phone = "";
             }
             ?>
-        
+
             <p class="font-bold mt-3 mb-2">Người đặt</p>
             <input class="border w-full p-2 rounded-[4px]" type="text" name="name" id="" value="<?= $name ?>">
             <p class="font-bold mt-3 mb-2">Địa chỉ</p>
@@ -38,15 +38,15 @@
         <div class="grid grid-cols-3 gap-6 max-w-[1200px] m-auto mt-5 mb-5 border rounded p-6 bg-white">
 
             <div class="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
-                <input id="bordered-radio-1" type="radio" value="" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <input id="bordered-radio-1" type="radio" value="radio" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                 <label for="bordered-radio-1" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Trả tiền khi nhận hàng</label>
             </div>
             <div class="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
-                <input id="bordered-radio-1" type="radio" value="" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <input id="bordered-radio-1" type="radio" value="radio" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                 <label for="bordered-radio-1" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Chuyển khoản ngân hàng</label>
             </div>
             <div class="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
-                <input id="bordered-radio-1" type="radio" value="" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <input id="bordered-radio-1" type="radio" value="radio" name="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                 <label for="bordered-radio-1" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Thanh toán online</label>
             </div>
 
@@ -91,11 +91,11 @@
                                 <input type="button" class="btn bg-sky-300 hover:bg-emerald-800 hover:text-white" value="Continue Shopping">
                             </a>
                         </td> -->
-            </form>
-                        </tr>
+</form>
+</tr>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+</tbody>
+</table>
+</div>
+</div>
+</div>

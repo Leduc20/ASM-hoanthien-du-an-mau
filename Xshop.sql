@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 22, 2022 lúc 04:46 PM
+-- Thời gian đã tạo: Th10 23, 2022 lúc 12:04 PM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -20,22 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `duanmau`
 --
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `admin`
---
-
-CREATE TABLE `admin` (
-  `id_admin` int(20) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `image` varchar(50) NOT NULL,
-  `active` bit(50) NOT NULL,
-  `role` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='3';
 
 -- --------------------------------------------------------
 
@@ -58,6 +42,37 @@ CREATE TABLE `bill` (
   `receive_phone` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Đang đổ dữ liệu cho bảng `bill`
+--
+
+INSERT INTO `bill` (`id_bill`, `bill_name`, `bill_address`, `bill_phone`, `bill_email`, `bill_pttt`, `date_buy`, `sum`, `bill_status`, `receive_name`, `receive_address`, `receive_phone`) VALUES
+(95, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:38:06pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(96, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:38:50pm 22/10/2022', 0, 0, NULL, NULL, NULL),
+(97, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:39:09pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(98, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:43:14pm 22/10/2022', 3491323, 0, NULL, NULL, NULL),
+(99, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:45:38pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(100, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '07:46:27pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(101, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:00:55pm 22/10/2022', 459000, 0, NULL, NULL, NULL),
+(102, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:05:16pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(103, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:06:50pm 22/10/2022', 0, 0, NULL, NULL, NULL),
+(104, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:07:40pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(105, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:08:17pm 22/10/2022', 0, 0, NULL, NULL, NULL),
+(106, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:08:28pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(107, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:10:13pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(108, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:11:43pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(109, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:12:46pm 22/10/2022', 11780000, 0, NULL, NULL, NULL),
+(110, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:13:08pm 22/10/2022', 26000000, 0, NULL, NULL, NULL),
+(111, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:13:45pm 22/10/2022', 5000000, 0, NULL, NULL, NULL),
+(112, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:14:36pm 22/10/2022', 0, 0, NULL, NULL, NULL),
+(113, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:15:16pm 22/10/2022', 459000, 0, NULL, NULL, NULL),
+(114, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:16:25pm 22/10/2022', 459000, 0, NULL, NULL, NULL),
+(115, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:17:35pm 22/10/2022', 460000, 0, NULL, NULL, NULL),
+(116, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:19:46pm 22/10/2022', 459000, 0, NULL, NULL, NULL),
+(117, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '08:20:39pm 22/10/2022', 459000, 0, NULL, NULL, NULL),
+(118, 'lê tống khánh linh', 'ha noi', '', '', 0, '08:56:16am 23/10/2022', 459000, 0, NULL, NULL, NULL),
+(119, 'lequangduc', 'Hà Nôi', '0', 'ducnhat31032002@gmail.com', 0, '11:22:11am 23/10/2022', 5000000, 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -75,6 +90,37 @@ CREATE TABLE `cart` (
   `thanhtien` int(10) NOT NULL,
   `id_bill` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `cart`
+--
+
+INSERT INTO `cart` (`id`, `id_user`, `id_hh`, `name`, `image`, `price`, `soluong`, `thanhtien`, `id_bill`) VALUES
+(55, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 95),
+(56, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 97),
+(57, 7, 98, 0, './upload/redmi note 7.jpg', 3000000, 1, 3000000, 98),
+(58, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 98),
+(59, 7, 96, 0, './upload/iphone 12 pro max.jpg', 32323, 1, 32323, 98),
+(60, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 99),
+(61, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 100),
+(62, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 101),
+(63, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 102),
+(64, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 104),
+(65, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 106),
+(66, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 107),
+(67, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 108),
+(68, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 109),
+(69, 7, 104, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 6780000, 1, 6780000, 109),
+(70, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 110),
+(71, 7, 102, 0, './upload/iphone-13.jpg', 21000000, 1, 21000000, 110),
+(72, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 111),
+(73, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 113),
+(74, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 114),
+(75, 7, 101, 0, './upload/Co-ao-khoac-nam.jpg', 460000, 1, 460000, 115),
+(76, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 116),
+(77, 7, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 117),
+(78, 0, 106, 0, './upload/Sandro_SHPPA00857-44_V_1.jpg', 459000, 1, 459000, 118),
+(79, 7, 105, 0, './upload/sandro_shppa00222-20_v_1.jpg', 5000000, 1, 5000000, 119);
 
 -- --------------------------------------------------------
 
@@ -101,7 +147,8 @@ INSERT INTO `comment` (`id_comment`, `content`, `id_user`, `id_hh`, `date_commen
 (67, 'sdaĐASA', 7, 104, '07:29:38pm 21/10/2022'),
 (68, 'dsadwd', 7, 104, '07:29:41pm 21/10/2022'),
 (69, 'dsadwqe23', 7, 104, '07:29:45pm 21/10/2022'),
-(71, 'sdfsdf', 7, 106, '07:31:35pm 21/10/2022');
+(71, 'sdfsdf', 7, 106, '07:31:35pm 21/10/2022'),
+(72, 'vải thô không ưng lắm\r\n', 7, 103, '08:29:44pm 22/10/2022');
 
 -- --------------------------------------------------------
 
@@ -124,7 +171,8 @@ INSERT INTO `commodities` (`id_commodities`, `name`) VALUES
 (44, 'Yody'),
 (46, 'Xiaomi'),
 (47, 'Oppo'),
-(48, 'Sandro');
+(48, 'Sandro'),
+(54, 'test delete cascade');
 
 -- --------------------------------------------------------
 
@@ -159,8 +207,7 @@ INSERT INTO `products` (`id_hh`, `name_pro`, `image`, `price`, `detail`, `sale`,
 (103, 'Quần short phối thêu', 'Sandro_SHPBE00042-94_V_1.jpg', '5340000', '	Quần short nam Sandro • Quần short • Lưng thun co giãn với dây rút • Hai túi ở hai bên • Hình th', '4560000', 144, 48),
 (104, 'Quần len ống suông', 'Sandro_SHPPA00857-44_V_1.jpg', '6780000', 'Quần nam Sandro • Virgin wool trousers • Two slanted pockets at the sides and two piped pockets at', '5678000', 23, 48),
 (105, 'Quần tây lưng co giãn', 'sandro_shppa00222-20_v_1.jpg', '5000000', 'Quần nam Sandro • Quần tây nam với lưng thun co giãn • Chất liệu pha len • Túi viền phía sau phối', '4000000', 55, 48),
-(106, 'Quần jean chất vải tốt', 'Sandro_SHPPA00857-44_V_1.jpg', '459000', 'Quần nam Sandro • Quần tây nam với lưng thun co giãn • Chất liệu pha len • Túi viền phía sau phối', '40000', 345, 48),
-(109, 'dsada', 'Sandro_SHPPA00857-44_V_1.jpg', '312321', '3dsdad', '321321', 2323, 42);
+(106, 'Quần jean chất vải tốt', 'Sandro_SHPPA00857-44_V_1.jpg', '459000', 'Quần nam Sandro • Quần tây nam với lưng thun co giãn • Chất liệu pha len • Túi viền phía sau phối', '40000', 345, 48);
 
 -- --------------------------------------------------------
 
@@ -184,17 +231,11 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id_user`, `name`, `password`, `email`, `address`, `phone`, `role`) VALUES
 (7, 'lequangduc', '310302', 'ducnhat31032002@gmail.com', 'Hà Nôi', 0, 1),
-(13, 'leduc', '31032002', 'duclqph25312@fpt.edu.vn', NULL, NULL, 0);
+(13, 'ducle', '31032002', 'leonar5lger@hotmail.com', 'Hn', 347291800, 0);
 
 --
 -- Chỉ mục cho các bảng đã đổ
 --
-
---
--- Chỉ mục cho bảng `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id_admin`);
 
 --
 -- Chỉ mục cho bảng `bill`
@@ -243,40 +284,34 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT cho bảng `admin`
---
-ALTER TABLE `admin`
-  MODIFY `id_admin` int(20) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT cho bảng `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id_bill` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `id_bill` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
 -- AUTO_INCREMENT cho bảng `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id_comment` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id_comment` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT cho bảng `commodities`
 --
 ALTER TABLE `commodities`
-  MODIFY `id_commodities` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id_commodities` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_hh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id_hh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT cho bảng `user`
